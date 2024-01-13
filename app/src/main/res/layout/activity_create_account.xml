@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryColor"
+    tools:context=".CreateAccount">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:layout_marginBottom="200dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="80dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create account"
+                android:fontFamily="@font/calibribold"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/email_Edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:singleLine="true"
+                android:fontFamily="@font/calibri_regular"
+                android:paddingStart="30dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_edittext"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/fullName_Edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full name"
+                android:singleLine="true"
+                android:fontFamily="@font/calibri_regular"
+                android:paddingStart="30dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_edittext"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/userName_Edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:singleLine="true"
+                android:fontFamily="@font/calibri_regular"
+                android:paddingStart="30dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_edittext"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/password_Edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:fontFamily="@font/calibri_regular"
+                android:paddingStart="30dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:drawableEnd="@drawable/baseline_visibility_off_24"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_edittext"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/confirmPassword_Edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:singleLine="true"
+                android:fontFamily="@font/calibri_regular"
+                android:paddingStart="30dp"
+                android:inputType="textPassword"
+                android:paddingEnd="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:drawableEnd="@drawable/baseline_visibility_off_24"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_edittext"
+                tools:ignore="HardcodedText" />
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="30dp">
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/createAcc_Button"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Create account"
+                   android:textAllCaps="false"
+                   android:textSize="20sp"
+                   android:fontFamily="@font/calibribold"
+                   android:textColor="@color/white"
+                   android:layout_marginStart="30dp"
+                   android:layout_marginEnd="30dp"
+                   android:background="@drawable/login_btn"/>
+
+               <ProgressBar
+                   android:id="@+id/progressbar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:indeterminateTint="@color/primaryColor"
+                   android:visibility="gone"
+                   android:layout_centerInParent="true"/>
+           </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/calibri_regular"
+                    android:text="Already have an account?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/loginHere_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/calibri_regular"
+                    android:text="Log in here"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

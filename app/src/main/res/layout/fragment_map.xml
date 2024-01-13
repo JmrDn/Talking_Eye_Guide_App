@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MapFragment">
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MY_MAP"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <RelativeLayout
+        android:id="@+id/noLocation_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="@color/black">
+        
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:indeterminateTint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/textview"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Locating user..."
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/focusUser_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/focus_user_icon"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"/>
+
+
+
+</RelativeLayout>

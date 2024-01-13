@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="2.5dp"
+    android:layout_marginBottom="2.5dp">
+
+    <TextView
+        android:id="@+id/day_Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday Jan 11, 2023"
+        tools:ignore="HardcodedText"
+        android:fontFamily="@font/calibribold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/lastLocation_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/day_Textview">
+
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/location"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/location_Textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Philippines"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/calibri_regular"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastLocation_Layout"
+        android:text="10:42 PM"
+        android:fontFamily="@font/calibri_regular"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

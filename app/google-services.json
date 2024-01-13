@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1045057091979",
+    "firebase_url": "https://talking-eye-guide-comms-d3c9d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "talking-eye-guide-comms-d3c9d",
+    "storage_bucket": "talking-eye-guide-comms-d3c9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045057091979:android:92d8953e8b18c69c8f978e",
+        "android_client_info": {
+          "package_name": "com.example.guidebot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnYpGk710ygzRh9OS8oohm-362cr_vKC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045057091979:android:ec1fa95d648fcf4f8f978e",
+        "android_client_info": {
+          "package_name": "com.example.talking_eye_guide_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnYpGk710ygzRh9OS8oohm-362cr_vKC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
