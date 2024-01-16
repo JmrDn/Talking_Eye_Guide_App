@@ -37,7 +37,6 @@ public class CameraFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_camera, container, false);
         initWidgets(view);
-        noCamera.setVisibility(View.VISIBLE);
         setValueForPreviousValue();
         setUpCamera();
 
@@ -71,7 +70,7 @@ public class CameraFragment extends Fragment {
 
     private void initWidgets(View view) {
         imageView = view.findViewById(R.id.imageview);
-        noCamera = view.findViewById(R.id.noCamera_RelativeLayout);
+
     }
 
     private void setUpCamera() {
@@ -91,12 +90,8 @@ public class CameraFragment extends Fragment {
                         Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0,
                                 bytes.length);
 
-                        if(!base64String.equals(previousValue))
-                            imageView.setImageBitmap(bitmap);
+                        imageView.setImageBitmap(bitmap);
 
-
-
-                        setImageVisibility(base64String, 60000);
                     }
 
 

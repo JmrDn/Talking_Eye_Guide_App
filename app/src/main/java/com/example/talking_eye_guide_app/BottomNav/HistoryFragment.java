@@ -96,6 +96,9 @@ public class HistoryFragment extends Fragment {
                                                     String location = getCompleteAddressString(latitude, longitude);
                                                     String dateFormatted = DateAndTimeFormatUtils.wordDateFormat(date);
 
+                                                    if(location.isEmpty())
+                                                        location = "Philippines";
+
                                                     list.add(new HistoryModel(location, time, dateFormatted));
 
                                                     if (adapter!= null)
